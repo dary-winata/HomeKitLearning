@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct HomeKitLearningApp: App {
+//
+//    @StateObject var homeStore: HomeStore = HomeStore()
+    @StateObject var viewStack: ViewStack = ViewStack()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: HomeStore()).environmentObject(viewStack)
         }
     }
 }

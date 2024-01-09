@@ -11,6 +11,11 @@
 		6A7172012A99FA2700D1A6E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7172002A99FA2700D1A6E0 /* ContentView.swift */; };
 		6A7172032A99FA2800D1A6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7172022A99FA2800D1A6E0 /* Assets.xcassets */; };
 		6A7172062A99FA2800D1A6E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7172052A99FA2800D1A6E0 /* Preview Assets.xcassets */; };
+		6A71720E2A9A033800D1A6E0 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71720D2A9A033800D1A6E0 /* HomeStore.swift */; };
+		6A7172102A9A0BB700D1A6E0 /* AccesoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71720F2A9A0BB700D1A6E0 /* AccesoriesView.swift */; };
+		6A7172142A9A133000D1A6E0 /* ViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7172132A9A133000D1A6E0 /* ViewStack.swift */; };
+		6A7172162A9A17C400D1A6E0 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7172152A9A17C400D1A6E0 /* ServiceView.swift */; };
+		6A7172182A9A1DA000D1A6E0 /* CharacteristicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7172172A9A1D9F00D1A6E0 /* CharacteristicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		6A7172002A99FA2700D1A6E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A7172022A99FA2800D1A6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7172052A99FA2800D1A6E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A71720C2A99FAB700D1A6E0 /* HomeKitLearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitLearning.entitlements; sourceTree = "<group>"; };
+		6A71720D2A9A033800D1A6E0 /* HomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
+		6A71720F2A9A0BB700D1A6E0 /* AccesoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesoriesView.swift; sourceTree = "<group>"; };
+		6A7172132A9A133000D1A6E0 /* ViewStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStack.swift; sourceTree = "<group>"; };
+		6A7172152A9A17C400D1A6E0 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
+		6A7172172A9A1D9F00D1A6E0 /* CharacteristicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,16 @@
 		6A7171FD2A99FA2700D1A6E0 /* HomeKitLearning */ = {
 			isa = PBXGroup;
 			children = (
+				6A71720C2A99FAB700D1A6E0 /* HomeKitLearning.entitlements */,
 				6A7171FE2A99FA2700D1A6E0 /* HomeKitLearningApp.swift */,
 				6A7172002A99FA2700D1A6E0 /* ContentView.swift */,
 				6A7172022A99FA2800D1A6E0 /* Assets.xcassets */,
 				6A7172042A99FA2800D1A6E0 /* Preview Content */,
+				6A71720D2A9A033800D1A6E0 /* HomeStore.swift */,
+				6A71720F2A9A0BB700D1A6E0 /* AccesoriesView.swift */,
+				6A7172132A9A133000D1A6E0 /* ViewStack.swift */,
+				6A7172152A9A17C400D1A6E0 /* ServiceView.swift */,
+				6A7172172A9A1D9F00D1A6E0 /* CharacteristicView.swift */,
 			);
 			path = HomeKitLearning;
 			sourceTree = "<group>";
@@ -137,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7172142A9A133000D1A6E0 /* ViewStack.swift in Sources */,
+				6A71720E2A9A033800D1A6E0 /* HomeStore.swift in Sources */,
 				6A7172012A99FA2700D1A6E0 /* ContentView.swift in Sources */,
+				6A7172182A9A1DA000D1A6E0 /* CharacteristicView.swift in Sources */,
 				6A7171FF2A99FA2700D1A6E0 /* HomeKitLearningApp.swift in Sources */,
+				6A7172162A9A17C400D1A6E0 /* ServiceView.swift in Sources */,
+				6A7172102A9A0BB700D1A6E0 /* AccesoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +286,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomeKitLearning/HomeKitLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeKitLearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 9CPQ5HZ2TL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Using homekit for setup hardware from app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +317,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomeKitLearning/HomeKitLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeKitLearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 9CPQ5HZ2TL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Using homekit for setup hardware from app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
